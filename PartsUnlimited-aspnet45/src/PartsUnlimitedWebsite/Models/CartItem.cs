@@ -5,13 +5,15 @@ namespace PartsUnlimited.Models
 {
     public class CartItem : ILineItem
     {
-        // my first change.
+        // my second change.
         [Key]
         public int CartItemId { get; set; }
+        // my third change
 
         [Required]
         public string CartId { get; set; }
         public int ProductId { get; set; }
+        // new change 1 //
         public int Count { get; set; }
 
         [DataType(DataType.DateTime)]
